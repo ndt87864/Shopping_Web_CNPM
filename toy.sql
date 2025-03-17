@@ -42,15 +42,6 @@ CREATE TABLE `address` (
 -- Đang đổ dữ liệu cho bảng `address`
 --
 
-INSERT INTO `address` (`id`, `username`, `fullname`, `phone`, `province`, `district`, `ward`, `address`) VALUES
-(1, '1', 'trung nguyen', '0375716892', 'Thái bình', 'kiến xương', 'vũ công23456', '15'),
-(2, '12', 'trung nguyen', '0375716892', 'Thái bình', 'kiến xương', 'vũ hòa', '15'),
-(3, '1', 'trung nguyen1', '0375716892', 'Thái bình', 'kiến xương', 'vũ công', 'từ hội trường thôn thái công bắc đi thẳng vào 200m , dừng ở chỗ sân to bên phải đường'),
-(6, 'user', 'trung nguyen', '0375716892', 'Thái bình', 'kiến xương', 'vũ công23456', '15ghjkkfjfjgjjjxsdfg'),
-(7, '123', 'trung nguyen', '0375716892', 'Thái bình', 'kiến xương', 'vũ công', '15'),
-(8, 'user', 'trung nguyen', '0375716892', 'Thái bình', 'kiến xương', 'vũ công23456', '151234567'),
-(10, '1', 'trung nguyen1', '0375716892', 'Thái bình', 'kiến xương', 'vũ công', ' hội trường thôn thái công bắc đi thẳng vào 200m , dừng ở chỗ sân to bên phải đường'),
-(11, '1', 'trung23456yu nguyen5678', '0375716891', 'in', 'kiến xương', 'vũ công', '15ghjkkfjfjgjjjxsdfg');
 
 -- --------------------------------------------------------
 
@@ -404,12 +395,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `user_level`, `msg_id`, `username`, `first_name`, `last_name`, `sex`, `email`, `password`, `user_photo`, `birthday`) VALUES
-(2, '1', '123456', 'user', 'trung', 'nguyen', 'nam', 'tapnham15022@gmail.com', '1234', 'agito.jpg', '2013-10-30'),
+(2, '1', '123456', 'user', 'trung', 'nguyen', 'nam', 'hhjjaa99922@gmail.com', '1234', 'agito.jpg', '2013-10-30'),
 (5, '1', '253845', '1', 'trung', 'nguyen1', 'nam', 'tapnham15402@gmail.com', '1', 'dragonranger.jpg', '2002-11-20'),
-(6, '2', '793528', '2', 'trung1', 'nguyen', 'nam', 'tapnham1502@gmail.com', '1', 'diend.jpg', '2013-11-07'),
+(6, '2', '793528', '2', 'trung1', 'nguyen', 'nam', 'hhjjaa9992@gmail.com', '1', 'diend.jpg', '2013-11-07'),
 (7, '1', '548172', '12', 'trungq', 'trung', 'nam', 'lemann78783457@gmail.com', '1', 'decade.jpg', '2013-11-07'),
 (8, '1', '823410', 'tendai1', 'asdfgh', 'asdfghjkl', 'nu', 'sdfghjk@dsfghj.sdfgh', '1234', 'shin.jpg', '2013-11-07'),
-(9, '1', '734025', 'ashy1234', 'wesdrtfhghuijok', 'nguyen', 'nu', 'tapnham150245@gmail.com', '', '_a616f20d-5e2a-414b-864f-5af7f1886ed9.jfif', '2013-11-07'),
+(9, '1', '734025', 'ashy1234', 'wesdrtfhghuijok', 'nguyen', 'nu', 'hhjjaa999245@gmail.com', '', '_a616f20d-5e2a-414b-864f-5af7f1886ed9.jfif', '2013-11-07'),
 (14, '1', '472915', '123', 'trung1', 'nguyen', 'nam', 'tapnham150we2@gmail.com', '1234', 'drive.jpg', '2013-11-07'),
 (15, '1', '153781', '34', 'sdfgh', 'llkjhg', 'nam', 'cvhnn@gmail.com', '1', '_a616f20d-5e2a-414b-864f-5af7f1886ed9.jfif', '2013-11-07'),
 (16, '2', '834863', 'admin', 'trung', 'nguyen1', '', 'tapnham15dwefrgth02@gmail.com', '1', 'exaid.jpg', '2013-11-07');
