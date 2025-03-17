@@ -1,24 +1,23 @@
-<?php require_once('..\kresources\config.php'); ?>
+ <?php require_once('..\kresources\config.php'); ?>
 <?php if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
   include(TEMPLATE_FRONT . DS . 'header_admin.php');
 } else {
   include(TEMPLATE_FRONT . DS . 'header.php');
 } ?>
-<link href="css/login.css" rel="stylesheet">
   <div class="limiter">
     <div class="container-login100">
       <h2 class="text-center bg-warning">
         <?php display_message(); ?>
       </h2>
       <div class="wrap-login100">
-        <div class="login100-pic js-tilt" data-tilt>
+        <div class="login100-pic js-tilt" data-tilt style="margin-top:90px;">
           <img src="./img/login.png" style="height:405px; background-color:white;">
         </div>
-        <div class="col-md-6 pull-right">
-          <h2 class="text-center"><b>ĐĂNG NHẬP</b></h2><br />
-          <div class="card mb-4">
+        <div class="col-md-6">
+          <h2 class="text-center" style="margin-top:35px;"><b>ĐĂNG NHẬP</b></h2><br />
+          <div class="card mb-4" style="border-radius:25px;">
             <div class="card-body">
-              <ul class="list-group list-group-flush">
+              <ul class="list-group list-group-flush" style="margin-left:10px;">
                 <br />
                 <form class="login100-form validate-form" method="post" enctype="multipart/form-data">
                   <?php login_user(); ?>
@@ -48,8 +47,7 @@
                       <a class="txt2 text-center" href="forgot.php">
                         Quên tài khoản hoặc mật khẩu ?
                       </a>
-                    </h2>
-                    <h2>
+                      <br>
                       <a class="txt2 text-center" href="register.php">
                         Chưa có tài khoản? Đăng kí
                       </a>

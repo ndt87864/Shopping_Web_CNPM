@@ -22,6 +22,6 @@ if (isset($_GET['buy_code'])) {
     confirm($query_orders);
     confirm($query);
     set_message("Cập nhật trạng thái thành công");
-    redirect("index_user.php?order");
+    redirect("index_user.php?delive");
 }
 ?>

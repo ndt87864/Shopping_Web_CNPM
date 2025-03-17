@@ -1,5 +1,4 @@
 <?php require_once('..\kresources\functions.php'); ?>
-                        <div >
-                <!--  was the product code but taken to function code-->
-                   <?php get_product();?>
-                </div><!-- row end here-->
+<div class="row">
+   <?php get_product(); ?>
+</div><!-- row end here-->

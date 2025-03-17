@@ -32,39 +32,6 @@ function extra_category_id()
 //*********************************************************************************************
 
 
-
-//******************************************Product Price***********************************
-function extra_price()
-{
-    if (isset($_GET['id'])) {
-        $query = query("SELECT * FROM products WHERE product_id = " . escape_string($_GET['id']) . "");
-        confirm($query);
-        while ($row = fetch_array($query)) {
-            $product_price = escape_string($row['product_price']);
-            return $product_price;
-        }
-    }
-}
-//*********************************************************************************************
-
-
-
-
-//******************************************Product Quantity***********************************
-function extra_quantity()
-{
-    if (isset($_GET['id'])) {
-        $query = query("SELECT * FROM products WHERE product_id = " . escape_string($_GET['id']) . "");
-        confirm($query);
-        while ($row = fetch_array($query)) {
-            $product_quantity = escape_string($row['product_quantity']);
-            return $product_quantity;
-        }
-    }
-}
-//*********************************************************************************************
-
-
 //******************************************Product Description***********************************
 function extra_description()
 {
@@ -137,27 +104,16 @@ function extra_image()
             </div>
             <div class="form-group">
             <label for="product-title"><i class="now-ui-icons location_bookmark"></i> Giới thiệu qua</label><br />
-            <textarea name="short_desc" id="" cols="30" rows="3" class="typography-line" value="<?php echo extra_short_desc(); ?>"></textarea>
+            <textarea name="short_desc" id="" cols="30" rows="3" class="typography-line" value="<?php echo extra_short_desc(); ?>"
+            style="border:1px solid black;border-radius:15px; margin-right:15px;"></textarea>
         </div>
         <div class="form-group">
             <label for="product-title"><i class="now-ui-icons travel_info"></i> Mô tả</label><br />
-            <textarea name="product_description" id="" cols="50" rows="10" class="typography-line" value="<?php echo extra_description(); ?>"></textarea>
+            <textarea name="product_description" id="" cols="50" rows="10" class="typography-line" value="<?php echo extra_description(); ?>"
+            style="border:1px solid black;border-radius:15px; margin-right:15px;"></textarea>
         </div>
         </div>
         <aside id="admin_sidebar" class="col-md-4">
-            <div class="form-group row">
-
-                <div class="col-xs-6">
-                    <label for="product-price"><i class="fa fa-usd"></i>Giá</label>
-                    <input name="product_price" class="form-control" value="<?php echo extra_price(); ?>">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="product-title"><i class="fa fa-sort-numeric-asc"></i> Số lượng</label>
-                <input type="number" name="product_quantity" class="form-control"
-                    value="<?php echo extra_quantity(); ?>">
-            </div>
-
             <div class="form-group">
                 <label for="product-title"><i class="fa fa-list"></i>Phân loại</label>
                 <select name="product_category_id" id="" class="form-control">

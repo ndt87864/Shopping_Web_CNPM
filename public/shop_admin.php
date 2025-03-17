@@ -12,7 +12,7 @@
     <div class="row text-center">
 
 
-        <?php get_products_in_admin_shop_page() ?>
+        <?php get_products_in_admin_shop_page(); ?>
     </div>
 </div>
 

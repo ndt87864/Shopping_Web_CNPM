@@ -1,6 +1,5 @@
 <?php require_once('..\kresources\config.php'); ?>
 <?php include(TEMPLATE_FRONT . DS . 'header.php'); ?>
-<link href="css/login.css" rel="stylesheet">
 <!-- Page Content -->
 <div class="container">
     </br />

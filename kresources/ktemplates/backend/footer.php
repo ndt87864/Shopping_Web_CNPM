@@ -4,62 +4,126 @@ confirm($query);
 
 $data = '';
 while ($row = fetch_array($query)) {
-    $data .= "{ status: '" . $row['status'] . "',<br> value: " . $row['value'] . "},<br>";
+  $data .= "{ status: '" . $row['status'] . "',<br> value: " . $row['value'] . "},<br>";
 }
 $data = substr($data, 0, -2);
 ?>
-<hr style="width:100%; border:3px solid black;">
-<div class="row col-12">
-    <h2 class=" text-center">Sản phẩm của nhóm 1</h2>
-</div>
-<!----------- Footer ------------>
 
-<footer class="footer-bs col-12">
-    <div class="row">
-        <div class="col-md-3 footer-brand">
-            <p>Kì Học 1/2023 Công Nghệ Phần Mềm DH11C12</p>
+
+<footer class="bg-primary text-center text-lg-start text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row my-4">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+        <div
+          class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+          style="width: 150px; height: 120px;">
+          <img src="../../kresources/uploads/toy1.jpg" alt="" loading="lazy" />
         </div>
-        <div class="col-md-4 footer-nav ">
-            <h4>Thành Viên Tham Gia Dự Án —</h4>
-            <div class="col-md-6">
-                <ul class="pages">
-                    <li><a href="#">Nguyễn Trần Trung (Leader-Trưởng Nhóm)</a></li>
-                    <li><a href="#">Nguyễn Đình Trung (Dev- backend)</a></li>
-                    <li><a href="#">Lê Việt Thuyên (Dev- front-end)</a></li>
-                    <li><a href="#">Đỗ Minh Vũ (Dev- front-end)</a></li>
-                    <li><a href="#">Lê Văn Minh (Phân tích,thực hiện tài liệu báo cáo)</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <!-- <ul class="list">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contacts</a></li>
-                    <li><a href="#">Terms & Condition</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul> -->
-            </div>
-        </div>
-        <div class="col-md-2 footer-social ">
-            <h4>Theo dõi chúng tôi tại</h4>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Zalo</a></li>
-            </ul>
-        </div>
+
+        <p class="text-center" style="color:white">Dự án thực hiện bởi Nhóm 1 - DH11C12 </p>
+
+        <ul class="list-unstyled d-flex flex-row justify-content-center">
+          <li>
+            <a class="text-white px-2" href="#!">
+              <i class="" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"></i>
+            </a>
+          </li>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Các thành viên</h5>
+
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="#!" class="text-white"> Trưởng Nhóm : Nguyễn Trần Trung</a>
+          </li>
+          <li class="mb-2">
+            <a href="#!" class="text-white"> Thiết Kế Giao Diện : Lê Việt Thuyên </a>
+          </li>
+          <li class="mb-2">
+            <a href="#!" class="text-white"> Thiết kế chức năng : Nguyễn Đình Trung </a>
+          </li>
+          <li class="mb-2">
+            <a href="#!" class="text-white"> Phân tích và tài liệu : Đỗ Minh Vũ</a>
+          </li>
+          <li class="mb-2">
+            <a href="#!" class="text-white"> Phân tích và tài liệu : Lê Văn Minh</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Thực hiện bằng :</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="#!" class="text-white"><i class=""></i>PHP & Bootstrap</a>
+          </li>
+        </ul>
+        </h5>
+      </div>
+      <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Animals</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class=""></i>Khong co gi het</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class=""></i>chi la demo thoi</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class=""></i>thay gi thi thay</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class=""></i>khong quan trong</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class=""></i>boi vis</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class=""></i>ai roi cung bi NTR thoi</a>
+            </li>
+          </ul>
+        </div> -->
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Liên hệ</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p style="color:white"><i class="fas fa-map-marker-alt pe-2" style="color:white"></i> Hà Nội , Việt Nam</p>
+          </li>
+          <li>
+            <p style="color:white"><i class="fas fa-phone pe-2" style="color:white"></i> 1900 100 thấy</p>
+          </li>
+          <li>
+            <p style="color:white"><i class="fas fa-envelope pe-2 mb-0" style="color:white"></i>
+              trungnguyenNTR@gmail.com</p>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
     </div>
-</footer>
-<section class="col-12" style="text-align:center; margin:10px auto;">
-    <p>
-        <?php echo $data; ?>Dự án thiết kế bởi Nhóm 1 DH11C12 - Công Nghệ Phần Mềm
-    </p>
-</section>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
 
-</div>
-
-
-</div>
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 9/2023 Dự án thực hiện & thiết kế bởi Nhóm 1 DH11C12
+  </div>
+  <!-- Copyright -->
 </footer>
 
 
@@ -76,8 +140,7 @@ $data = substr($data, 0, -2);
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
@@ -87,11 +150,11 @@ confirm($query);
 $query_total = query("SELECT id, COUNT(*) as total FROM buy");
 confirm($query_total);
 $row_total = fetch_array($query_total);
-$total=$row_total["total"];
+$total = $row_total["total"];
 $data = array();
 while ($row = fetch_array($query)) {
-    $percent= round(($row['value']/$total)*100,2);
-    $data[] = array('status' => $row['status'], 'value' =>$percent .'%');
+  $percent = round(($row['value'] / $total) * 100, 2);
+  $data[] = array('status' => $row['status'], 'value' => $percent . '%');
 }
 
 $query1 = query("SELECT order_name, COUNT(order_name) as count, SUM(order_amount) as total_amount FROM orders GROUP BY order_name");
@@ -99,33 +162,33 @@ confirm($query1);
 
 $data_bar = array();
 while ($row = fetch_array($query1)) {
-    $data_bar[] = array('order_name' => $row['order_name'], 'count' => $row['count'], 'total_amount' => $row['total_amount']);
+  $data_bar[] = array('order_name' => $row['order_name'], 'count' => $row['count'], 'total_amount' => $row['total_amount']);
 }
 
 ?>
 <script type="text/javascript">
-    $(function () {
-        var data = <?php echo json_encode($data); ?>;
+  $(function () {
+    var data = <?php echo json_encode($data); ?>;
 
-        Morris.Donut({
-            element: 'chart',
-            data: data,
-            formatter: function (value, data) {
-                if (data !== null) {
-                    return data.status + ': ' + value;
-                } else {
-                    return value;
-                }
-            }
-        });
+    Morris.Donut({
+      element: 'chart',
+      data: data,
+      formatter: function (value, data) {
+        if (data !== null) {
+          return data.status + ': ' + value;
+        } else {
+          return value;
+        }
+      }
     });
-    new Morris.Bar({
-        element: 'tchart',
-        data: <?php echo json_encode($data_bar); ?> ,
-        xkey: 'order_name',
-        ykeys: ['count', 'total_amount'],
-        labels: ['số lượng', 'Doanh thu']
-    });
+  });
+  new Morris.Bar({
+    element: 'tchart',
+    data: <?php echo json_encode($data_bar); ?>,
+    xkey: 'order_name',
+    ykeys: ['count', 'total_amount'],
+    labels: ['số lượng', 'Doanh thu']
+  });
 </script>
 </body>
 

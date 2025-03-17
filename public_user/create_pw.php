@@ -24,7 +24,6 @@ function user()
     echo $user;
 }
 ?>
-<link href="css/login.css" rel="stylesheet">
 <!-- Page Content -->
 <div class="container">
     </br />

@@ -5,6 +5,7 @@ if (isset($_GET['order_id']) && isset($_POST['edit_status'])) {
     $status = $_POST['status'];
     $id = $_GET['order_id'];
 
+    $page = $_SESSION["page"];
     // Truy vấn dữ liệu từ cơ sở dữ liệu để lấy thông tin về đơn hàng
     $query_order_info = query("SELECT  buy_code,user_name, product_name, price, quantity, amount, status, photo, buyad,add_date FROM buy WHERE id = '{$id}'");
     confirm($query_order_info);
@@ -30,6 +31,19 @@ if (isset($_GET['order_id']) && isset($_POST['edit_status'])) {
     }
     confirm($query);
     set_message("Cập nhật trạng thái thành công");
-    redirect("../admin/index.php?admin_order");
-} 
+    if ($page == 6) {
+        $link = 'index.php?admin_order';
+    } elseif ($page == 7) {
+        $link = 'index.php?ad_process';
+    } elseif ($page == 8) {
+        $link = 'index.php?ad_confirm';
+    } elseif ($page == 9) {
+        $link = 'index.php?ad_ship';
+    } elseif ($page == 10) {
+        $link = 'index.php?ad_delive';
+    } elseif ($page == 11) {
+        $link = 'index.php?order_code=' .$buy_code. '';
+    }
+    redirect("../admin/$link");
+}
 ?>

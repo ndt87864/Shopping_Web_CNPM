@@ -4,9 +4,6 @@
 } else {
   include(TEMPLATE_FRONT . DS . 'header.php');
 } ?>
-<style>
-  .gradient-custom {}
-</style>
 
 <div class="container">
   </br />
@@ -23,20 +20,13 @@
             <div class="card-header py-3">
               <strong>
                 <h1 class="mb-0" style="padding-bottom: 0px;">Giỏ Hàng</h1>
-
-                <?php
-                echo isset($_SESSION['item_quantity']) ? $_SESSION['item_quantity'] : $_SESSION['item_quantity'] = "0"; ?>
-                Sản phẩm
-
               </strong>
-
             </div>
             <form action="" method="post">
               <?php cart(); ?>
-
               <div class="card mb-4">
                 <div class="card-body">
-                  <div class="bg-warning form-control" style="padding-top:12px; padding-bottom:2px;">
+                  <div class="bg-warning form-control" style="padding-top:8px; padding-bottom:8px;">
                     <p><strong>Miễn phí vận chuyển cho đơn hàng giá trị từ 450.000</strong></p>
                   </div>
                   <br>
@@ -56,7 +46,7 @@
               </div>
               <div class="card mb-4 mb-lg-0">
                 <div class="card-body">
-                  <div class="bg-warning form-control" style="padding-top:12px; padding-bottom:2px;">
+                  <div class="bg-warning form-control" style="padding-top:8px; padding-bottom:8px;">
                     <p><strong>Chúng tôi chấp nhận các hình thức thanh toán :</strong></p>
                   </div>
                   <br>
@@ -85,9 +75,7 @@
 
           <div class="col-md-4">
             <div class="card mb-4">
-              <!-- <div class="card-header py-3">
-            <p><h2 class="mb-0">Thanh Toán</h2></p>
-          </div> -->
+
               <div class="card-body">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">

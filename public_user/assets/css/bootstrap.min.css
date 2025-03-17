@@ -2870,6 +2870,11 @@ textarea.form-control.is-invalid {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
+.btn-orang {
+    color: #fff;
+    background-color: #ff7b00;
+    border-color: #fdfdfd;
+  }
 @media (prefers-reduced-motion:reduce) {
     .btn {
         transition: none
@@ -3635,7 +3640,6 @@ input[type=submit].btn-block {
     padding: .5rem 0;
     margin: .125rem 0 0;
     font-size: 1rem;
-    color: #0d0d0d;
     text-align: left;
     list-style: none;
     background-color: #fff;
@@ -3644,6 +3648,13 @@ input[type=submit].btn-block {
     border-radius: .25rem
 }
 
+.dropdown-menu li a {
+    background-color: black;
+}
+
+.dropdown-menu li a:hover {
+    background-color: blue;
+}
 .dropdown-menu-left {
     right: auto;
     left: 0
@@ -9030,17 +9041,17 @@ button.bg-dark:hover {
 
 .mr-5,
 .mx-5 {
-    margin-right: 5rem !important
+    margin-right: 3rem !important
 }
 
 .mb-5,
 .my-5 {
-    margin-bottom: 5rem !important
+    margin-bottom: 3rem !important
 }
 
 .ml-5,
 .mx-5 {
-    margin-left: 5rem !important
+    margin-left: 3rem !important
 }
 
 .p-0 {
@@ -11424,7 +11435,7 @@ a.text-dark:hover {
    cursor: pointer;
   }
   .status-confirmed {
-    width: 69%;
+    width: 120px;
     background-color:  red;
     color: white;
     border-radius: 10px;
@@ -11433,7 +11444,7 @@ a.text-dark:hover {
   }
   
   .status-shipping {
-    width: 60%;
+    width: 150px;
     background-color:  green;
     color: white;
     border-radius: 10px;
@@ -11442,11 +11453,10 @@ a.text-dark:hover {
   }
   
   .status-delivered {
-    width: 80%;
+    width: 150px;
     background-color: blue;
     color: white;
     border-radius: 10px;
     cursor: pointer;
     /* Màu xanh dương cho trạng thái đã giao hàng */
   }
-  

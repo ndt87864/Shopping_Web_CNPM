@@ -23,24 +23,15 @@
     </div>
 </div>
 <div class="container">
-
     <div class="col-md-12">
-
         <div class="row carousel-holder">
-            <!--Product Functon-->
             <?php include(TEMPLATE_FRONT_USER . DS . 'user_products.php');
             if (isset($_GET['address'])) {
                 include(TEMPLATE_BACK_USER . '\address.php');
-            }
-
-            ;
-            ?>
-
+            }?>
         </div>
-
     </div>
-
 </div>
 <!-- /.container -->
 
-<?php include(TEMPLATE_FRONT_USER.DS.'footer.php'); ?>
+<?php include(TEMPLATE_FRONT_USER . DS . 'footer.php'); ?>

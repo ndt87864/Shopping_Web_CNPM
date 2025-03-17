@@ -1,63 +1,113 @@
+</div>
 
 </div>
-<hr style='border: 3px solid black; width:100%;'>
-<div class="container">
-    <footer>
-        <div class="credit-right">
-            <div class="container">
-                <div class="row text-center">
-                    <h2>Sản phẩm của nhóm 1</h2>
-                </div>
-                <!----------- Footer ------------>
-                <footer class="footer-bs">
-                    <div class="row">
-                        <div class="col-md-3 footer-social">
-                            <h2></h2>
-                            <p>Sản phẩm của nhóm 1</p>
-                            <p>Kì Học 1/2023 Công Nghệ Phần Mềm DH11C12</p>
-                        </div>
-                        <div class="col-md-4 footer-nav ">
-                            <h4>-Thành Viên Tham Gia Dự Án-</h4>
-                            <div class="col-md-6">
-                                <ul class="pages">
-                                    <li><a href="#">Nguyễn Trần Trung (Leader-Trưởng Nhóm)</a></li>
-                                    <li><a href="#">Nguyễn Đình Trung (Dev- backend)</a></li>
-                                    <li><a href="#">Lê Việt Thuyên (Dev- front-end)</a></li>
-                                    <li><a href="#">Đỗ Minh Vũ (Dev- front-end)</a></li>
-                                    <li><a href="#">Lê Văn Minh (Phân tích,thực hiện tài liệu báo cáo)</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <!-- <ul class="list">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contacts</a></li>
-                            <li><a href="#">Terms & Condition</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul> -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 footer-social">
-                            <h4>-Theo dõi chúng tôi tại-</h4>
-                            <ul>
-                                <li><a href="#">Facebook</a></li>
-                                <li><a href="#">Twitter</a></li>
-                                <li><a href="#">Instagram</a></li>
-                                <li><a href="#">Zalo</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </footer>
-                <section style="text-align:center; margin:10px auto;">
-                    <p>Dự án thiết kế bởi Nhóm 1 DH11C12 - Công Nghệ Phần Mềm</p>
-                </section>
 
-            </div>
+<footer class="bg-primary text-center text-lg-start text-white" style="padding-top:25px;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row my-4">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-4 mb-2 mb-md-0">
 
-
+        <div
+          class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+          style="width: 150px; height: 120px;">
+          <img src="../kresources/uploads/toy1.jpg" alt="" loading="lazy" />
         </div>
-    </footer>
+      </div>
+      <!--Grid column-->
 
-</div>
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="margin-top: 20px; padding-bottom:35px;">
+        <h5 class="text-uppercase mb-4">Các thành viên :</h5>
+
+        <ul class="list-unstyled" style="margin-top: 20px;">
+          <li>
+            <p style="color:white"> Trưởng Nhóm : Nguyễn Trần Trung</p>
+          </li>
+          <li>
+            <p style="color:white"> Thiết Kế Giao Diện : Lê Việt Thuyên </p>
+          </li>
+          <li>
+            <p style="color:white"> Thiết kế chức năng : Nguyễn Đình Trung </p>
+          </li>
+          <li>
+            <p style="color:white"> Phân tích và tài liệu : Đỗ Minh Vũ </p>
+          </li>
+          <li>
+            <p style="color:white"> Phân tích và tài liệu : Lê Văn Minh</p>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="margin-top: 20px;">
+        <h5 class="text-uppercase mb-4">Thực hiện bằng :</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="" style="color:white"><i class=""></i>PHP & Bootstrap</a>
+          </li>
+        </ul>
+        </h5>
+      </div>
+      <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Animals</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class=""></i>Khong co gi het</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class=""></i>chi la demo thoi</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class=""></i>thay gi thi thay</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class=""></i>khong quan trong</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class=""></i>boi vis</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class=""></i>ai roi cung bi NTR thoi</a>
+            </li>
+          </ul>
+        </div> -->
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="margin-top: 20px;">
+        <h5 class="text-uppercase mb-4">Liên hệ</h5>
+
+        <ul class="list-unstyled" style="margin-top: 20px;">
+          <li>
+            <p style="color:white"><i class="fas fa-map-marker-alt pe-2" style="color:white"></i> Hà Nội , Việt Nam</p>
+          </li>
+          <li>
+            <p style="color:white"><i class="fas fa-phone pe-2" style="color:white"></i> 1900 100 thấy</p>
+          </li>
+          <li>
+            <p style="color:white"><i class="fas fa-envelope pe-2 mb-0" style="color:white"></i>
+              trungnguyenNTR@gmail.com</p>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2) ">
+    © 9/2023 Dự án thực hiện & thiết kế bởi Nhóm 1 DH11C12
+  </div>
+  <!-- Copyright -->
+</footer>
+
 <!-- /.container -->
 
 <script src="assets/js/core/jquery.min.js"></script>
@@ -72,8 +122,12 @@
 <!-- Bootstrap Core JavaScript -->
 <!-- <script src="js/bootstrap.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
+</div>
+
 </body>
 
 </html>

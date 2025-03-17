@@ -6,41 +6,41 @@
 } ?>
 
 <link href="css/login.css" rel="stylesheet">
-<div class="container">
-  <h2 class="text-center bg-warning">
-    <?php display_message(); ?>
-  </h2>
-  <div class="navbar-left">
+<div class="container" style="margin-top: 50px;">
+  <div class="navbar-left" style="margin-left:5px; margin-top:115px; margin-right: 55px;">
     <div class="login100-pic js-tilt" data-tilt>
       <img src="./img/undraw-contact.svg" alt="một thứ gì đó giống với thể loại NTR">
     </div>
   </div>
+  <div style="padding-left:35px;"></div>
   <div class="col-md-8">
     <h2 class="text-center"><b>LIÊN HỆ VỚI CHÚNG TÔI</b></h2><br />
-    <div class="card mb-6">
+        <h2 class="text-center bg-warning">
+          <?php display_message(); ?>
+        </h2>
+    <div class="card mb-6" style="border-radius: 25px; padding-bottom:15px; padding-right:25px;">
       <div class="card-body">
-        <br />
-        <form method="post" enctype="multipart/form-data">
+        <br>
+        <form name="sentMessage" id="contactForm" method="post">
           <?php request_to_admin(); ?>
-          <strong>
-            <br>
+          <strong style="margin-left: 30px;">
             <span>Thời gian phản hồi trung bình 1-3 ngày</span>
             <br />
             <br />
           </strong>
-          <div class="col-md-6 navbar-center">
-            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-              <input class="input100" type="text" name="email" id="email" placeholder="Nhập Email">
-              <span class="focus-input100"></span>
-              <span class="symbol-input100">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-              </span>
-            </div>
+          <div class="col-md-6 navbar-center" >
             <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
               <input class="input100" type="text" name="name" id="name" placeholder="Tên của bạn">
               <span class="focus-input100"></span>
               <span class="symbol-input100">
                 <i class="fa fa-user" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+              <input class="input100" type="text" name="email" id="email" placeholder="Nhập Email">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
               </span>
             </div>
             <div class="wrap-input100 validate-input" data-validate="">
@@ -54,17 +54,16 @@
           </div>
 
           <div class="col-md-6 navbar-right">
-            <div class="wrap-input100 validate-input" data-validate="">
-              <textarea class="typography-line" name="message" placeholder="Lời nhắn của bạn *" id="message" cols="40"
+            <div class="wrap-input100 validate-input" data-validate="" style=" padding-top:2px;">
+              <textarea class="typography-line" name="message" placeholder="  Lời nhắn của bạn *" id="message" cols="40"
                 rows="8" required data-validation-required-message="Hãy nhập vào lời nhắn của bạn."
-                style="border: 1px solid black;"></textarea>
-
+                style="border:1px solid black;border-radius:15px; margin-right:15px;"></textarea>
               <span class="focus-input100"></span>
             </div>
             <br>
           </div>
           <div class="container-login100-form-btn">
-            <input type="submit" class="login100-form-btn" value="Gửi yêu cầu">
+            <button type="submit" name="submit" class="login100-form-btn" style="width:50%; margin-left:8px;">Gửi yêu cầu</button>
           </div>
         </form>
       </div>
@@ -81,6 +80,4 @@
   <script src="js/main.js"></script>
 
 
-  <div class="content">
-    <?php include(TEMPLATE_FRONT_USER . DS . 'footer.php'); ?>
-  </div>
+<?php include(TEMPLATE_FRONT_USER . DS . 'footer.php'); ?>

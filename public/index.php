@@ -2,26 +2,13 @@
 <?php include(TEMPLATE_FRONT . DS . 'header_admin.php'); ?>
 
 
-<style>
-    * {
-        font-family: 'AR One Sans', sans-serif;
-    }
 
-    .container {
-
-        font-family: 'AR One Sans', sans-serif !important;
-    }
-</style>
-
-<!-- Page Content -->
 <div class="container">
-    <!--Categories here-->
-
+    </br />
     <br />
     <div class="col-md-12">
-        <br />
         <div class="row carousel-holder">
-
+            </br />
             <?php include(TEMPLATE_FRONT . DS . 'side_nav.php'); ?>
             <div class="col-md-9">
 
@@ -37,14 +24,11 @@
     <div class="col-md-12">
 
         <div class="row carousel-holder">
-            <!--Product Functon-->
             <?php include(TEMPLATE_FRONT . DS . 'products.php'); ?>
-
         </div>
 
     </div>
 
 </div>
-<!-- /.container -->
-
+</div>
 <?php include(TEMPLATE_FRONT . DS . 'footer.php'); ?>

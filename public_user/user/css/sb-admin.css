@@ -6,17 +6,6 @@
 
 /* Global Styles */
 
-body {
-    margin-top: 100px;
-    background-color:  #222;
-}
-
-@media(min-width:768px) {
-    body {
-        margin-top: 50px;
-    }
-}
-
 #wrapper {
     padding-left: 0;
 }
@@ -45,7 +34,6 @@ body {
 }
 
 /* Top Navigation */
-
 .top-nav {
     padding: 0 15px;
 }
@@ -78,7 +66,7 @@ body {
     border: 1px solid rgba(0,0,0,.15);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    background-color: #000000;
+    background-color: #fff;
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
     box-shadow: 0 6px 12px rgba(9, 78, 175, 0.485);
 }
@@ -257,3 +245,11 @@ ul.alert-dropdown {
 .panel-pink a:hover {
     color:#f60323;
 }
+.custom-link {
+    color: rgb(0, 157, 255);
+ }
+
+ .custom-link:hover {
+    color: rgb(233, 54, 0);
+    text-decoration: none;
+ }

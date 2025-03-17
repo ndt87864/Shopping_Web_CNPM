@@ -34,6 +34,7 @@
                 <tr>
                     <th>id</th>
                     <th>Loại</th>
+                    <th></th>
                 </tr>
             </thead>
 

@@ -20,11 +20,8 @@ if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
         </div>
     </div>
     <!-- /.row -->
-
     <!-- Page Features -->
-    <div class="row ">
-
-
+    <div class="row" style="border-radius:25px;">
         <?php get_products_in_shop_page(); ?>
     </div>
     <!-- /.row -->

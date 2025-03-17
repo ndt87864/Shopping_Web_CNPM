@@ -5,7 +5,6 @@ include(TEMPLATE_FRONT . DS . 'header.php');
 
 ?>
 
-<link href="css/login.css" rel="stylesheet">
 <div class="container">
     <h2 class="text-center bg-warning">
         <?php display_message(); ?>
@@ -16,6 +15,7 @@ include(TEMPLATE_FRONT . DS . 'header.php');
         </div>
     </div>
     <div class="col-md-6 navbar-right">
+          <h2 class="text-center"><b>ĐĂNG KÍ</b></h2><br />
         <div class="card mb-4">
             <div class="card-body">
                 <ul class="list-group list-group-flush">
@@ -40,6 +40,11 @@ include(TEMPLATE_FRONT . DS . 'header.php');
                                     <i class="fa fa-user" aria-hidden="true"></i>
                                 </span>
                             </div>
+                            <div class="wrap-input100 validate-input"
+                                data-validate="Valid email is required: ex@abc.xyz">
+                                <input type="date" name="birthday" class=" input100">
+                                <span class="focus-input100"></span>
+                            </div>
                             <br />
                             <div class="form-group">
                                 <label class="fa fa-transgender-alt"></label>
@@ -52,10 +57,6 @@ include(TEMPLATE_FRONT . DS . 'header.php');
                                     class="fa fa-transgender-alt">
                                     Khác&ensp;</label>
                                 <br>
-                            </div>
-                            <div class="form-group fa fa-file-image">
-                                <label for="file">Hình ảnh:</label>
-                                <input type="file" name="file">
                             </div>
                         </div>
 
@@ -84,6 +85,10 @@ include(TEMPLATE_FRONT . DS . 'header.php');
                                 <span class="symbol-input100">
                                     <i class="fa fa-lock" aria-hidden="true"></i>
                                 </span>
+                            </div>
+                            <div class="form-group fa fa-file-image">
+                                <label for="file">Hình ảnh:</label>
+                                <input type="file" name="file">
                             </div>
                             <br>
                             <br />

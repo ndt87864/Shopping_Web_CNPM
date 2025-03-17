@@ -8,32 +8,29 @@
          <?php display_message(); ?>
       </h4>
    </div>
+   <div class="card mb-4">
+      <div class="card-body">
+         <div style="width: 100%;">
+            <div style="display: flex; justify-content: space-between;">
 
-   <table class="table table-bordered">
-      <td>
-         <a href="index_user.php?order">
-            <p>Tất cả</p>
-         </a>
-      </td>
-      <td>
-         <a href="index_user.php?process">
-            <p>Đang chờ xử lý</p>
-         </a>
-      </td>
-      <td>
-         <a href="index_user.php?confirm">
-            <p>Đã xác nhận </p>
-      </td>
-      <td>
-         <a href="index_user.php?ship">
-            <p>Đang giao hàng</p>
-      </td>
-      <td>
-         <a href="index_user.php?delive">
-            <p>Đã hoàn thành</p>
-      </td>
-   </table>
-   <table class="table table-hover">
-      <?php display_ship(); ?>
-   </table>
+               <a href="index_user.php?order" class="custom-link">
+                  <h4>Tất cả</h4>
+               </a>
+               <a href="index_user.php?process" class="custom-link">
+                  <h4>Đang chờ xử lý</h4>
+               </a>
+               <a href="index_user.php?confirm" class="custom-link">
+                  <h4>Đã xác nhận </h4>
+               </a>
+               <a href="index_user.php?ship" class="custom-link">
+                  <h4>Đang giao hàng</h4>
+               </a>
+               <a href="index_user.php?delive" class="custom-link">
+                  <h4>Đã hoàn thành</h4>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <?php display_ship(); ?>
 </div>

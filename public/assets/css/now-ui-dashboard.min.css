@@ -2469,11 +2469,13 @@ a[data-toggle=collapse][aria-expanded=true] .caret {
 }
 
 .dropdown-menu li a {
-    background-color: black;
+    background-color: rgb(247, 247, 247);
+    color:black;
 }
 
 .dropdown-menu li a:hover {
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
+    color:#000;
 }
 
 .dropdown-menu.dropdown-menu-right:before {
@@ -3530,7 +3532,6 @@ img {
 .off-canvas-sidebar .sidebar-wrapper,
 .sidebar .sidebar-wrapper {
     position: relative;
-    height: calc(100vh - 75px);
     overflow: auto;
     width: 260px;
     z-index: 4;

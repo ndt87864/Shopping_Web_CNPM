@@ -11,10 +11,18 @@
 
         <?php
         if ($_SERVER['REQUEST_URI'] == "/Shopping_Web_CNPM/public_user/user/" || $_SERVER['REQUEST_URI'] == "/Shopping_Web_CNPM/public_user/user/index_user.php") {
-            include(TEMPLATE_BACK_USER  . '\content.php');
+            include(TEMPLATE_BACK_USER  . '\user.php');
         }
         //orders******************************************************************************
-        
+        if (isset($_GET['cus_support'])) {
+            include(TEMPLATE_BACK_USER  . '\cus_support.php');
+        }
+        if (isset($_GET['message_id'])) {
+            include(TEMPLATE_BACK_USER . '/message.php');
+        }
+        if (isset($_GET['chat'])) {
+            include(TEMPLATE_BACK_USER . '/chat.php');
+        }
         if (isset($_GET['order'])) {
             include(TEMPLATE_BACK_USER  . '\order.php');
         }
@@ -45,9 +53,6 @@
         }
         //adding products**********************************************************************
         //users*******************************************************************************
-        if (isset($_GET['user'])) {
-            include(TEMPLATE_BACK_USER  . '\user.php');
-        }
         if (isset($_GET['id'])) {
             include(TEMPLATE_BACK_USER  . '\edit_address.php');
         }

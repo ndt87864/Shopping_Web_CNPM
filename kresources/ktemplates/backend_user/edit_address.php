@@ -70,60 +70,65 @@ function extra_address()
     }
 }
 ?>
-
-<h1 class="">
-    Thêm thông tin nhận hàng
-</h1>
-<?php update_address() ?>
-
-<form action="" method="post" enctype="multipart/form-data">
-    <div class="col-md-6">
-    <a id="user-id" class="btn btn-danger" href="index_user.php?address">Quay lại<br /></a>
-        <div class="form-group">
-            <label class="fa fa-fw fa-map-marker"></label>
-            <label for="province">Tỉnh/Thành phố:</label><br />
-            <input type="text" id="province" name="province" class="form-control"
-                value="<?php echo extra_province(); ?>"><br><br>
-        </div>
-        <div class="form-group">
-            <label class="fa fa-fw fa-location-arrow"></label>
-            <label for="district">Quận/Huyện</label><br />
-            <input type="text" id="district" name="district" class="form-control"
-                value="<?php echo extra_district(); ?>"><br><br>
-        </div>
-        <div class="form-group">
-            <label class="fa fa-fw fa-location-arrow"></label>
-            <label for="ward">Phường/Xã:</label><br />
-            <input type="text" id="ward" name="ward" class="form-control" value="<?php echo extra_ward(); ?>"><br><br>
-        </div>
-        <div class="form-group">
-            <label class="fa fa-fw fa-info"></label>
-            <label for="address">Địa chỉ cụ thể:</label><br />
-            <input type="text" id="address" name="address" class="form-control"
-                value="<?php echo extra_address(); ?>"><br><br>
+<div class="col-md-12">
+    <div class="modal-content"  style="margin-bottom:25px; border-radius: 25px;">
+        <div class="modal-body">
+            <form action="" method="post" enctype="multipart/form-data">
+                <?php update_address() ?>
+                <h6 class="text-center" style="margin-top:5px;margin-bottom:5px;margin-left:10px; margin-right:10px;">
+                    Chỉnh sửa thông tin nhận hàng:
+                </h6>
+                <br>
+                <div class="col-md-12">
+                    <div class="form-group col-md-6">
+                        <label class="fa fa-h-square"></label>
+                        <label for="fullname">Họ và tên:</label><br />
+                        <input type="text" id="fullname" name="fullname" class="form-control"
+                            value="<?php echo extra_name(); ?>"><br><br>
+                    </div>
+                    <!-- <div class="box-space" style="padding-left:25px; padding-right:25px;"></div> -->
+                    <div class="form-group col-md-6">
+                        <label class="fa fa-phone"></label>
+                        <label for="phone">Số điện thoại:</label><br />
+                        <input type="text" id="phone" name="phone" class="form-control"
+                            value="<?php echo extra_phone(); ?>"><br><br>
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-12">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="fa fa-map-marked-alt"></label>
+                                <label class="text-left" for="province">Tỉnh/ Thành phố:</label><br />
+                                <input type="text" id="province" name="province" class="form-control"
+                                    value="<?php echo extra_province(); ?>"><br><br>
+                            </div>
+                            <div class="form-group">
+                                <label class="fa fa-fw far fa-map-marker-alt"></label>
+                                <label for="district">Quận/Huyện</label><br />
+                                <input type="text" id="district" name="district" class="form-control"
+                                    value="<?php echo extra_district(); ?>"><br><br>
+                            </div>
+                            <div class="form-group">
+                                <label class="fa fa-fw far fa-map-marker"></label>
+                                <label for="ward">Phường/Xã:</label><br />
+                                <input type="text" id="ward" name="ward" class="form-control"
+                                    value="<?php echo extra_ward(); ?>"><br><br>
+                            </div>
+                            <div class="form-group">
+                                <label class="fa fa-map-marked"></label>
+                                <label for="address">Địa chỉ cụ thể:</label><br />
+                                <input type="text" id="address" name="address" class="form-control"
+                                    value="<?php echo extra_address(); ?>"><br><br>
+                            </div>
+                            <div class="form-group d-flex justify-content-between">
+                                <a id="user-id" class="btn btn-danger" href="index_user.php?address" style="border-radius:25px;">Quay lại</a>
+                                <input type="submit" name="update_address" class="btn btn-primary" value="Lưu" style="border-radius:25px;">
+                            </div>
+                        </div>        
+                </div>
+                
+            </form>
         </div>
     </div>
-    <div class="col-md-6  ">
-        <div class="nav navbar-right">
-            <input type="submit" name="update_address" class="btn btn-success " value="Lưu">
-        </div>
-        <div class="user_image_box">
-
-            <span id="user_admin" class='fa fa-user fa-2x'></span>
-
-        </div>
-        <div class="form-group">
-            <label class="fa fa-fw fa-github-alt"></label>
-            <label for="fullname">Họ và tên:</label><br />
-            <input type="text" id="fullname" name="fullname" class="form-control"
-                value="<?php echo extra_name(); ?>"><br><br>
-        </div>
-        <div class="form-group">
-            <label class="fa fa-fw fa-mobile-phone"></label>
-            <label for="phone">Số điện thoại:</label><br />
-            <input type="text" id="phone" name="phone" class="form-control"
-                value="<?php echo extra_phone(); ?>"><br><br>
-        </div>
-    </div>
-
-</form>
+</div>

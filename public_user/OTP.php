@@ -1,7 +1,6 @@
 <?php require_once('..\kresources\config.php'); ?>
 <?php include(TEMPLATE_FRONT . DS . 'header.php'); ?>
 
-<link href="css/login.css" rel="stylesheet">
 <!-- Page Content -->
 <div class="container">
     </br />
@@ -23,7 +22,7 @@
                         <h4 class="text-center">OTP</h4>
                     </label>
                     <form class="" action="" method="post">
-                        <?php otp_check() ?>
+                        <?php otp_check(); ?>
 
                         <div class="wrap-input100 validate-input" data-validate="Password is required">
                             <input class="input100" type="text" name="otp">
@@ -48,7 +47,7 @@
                         var downloadTimer = setInterval(function () {
                             if (timeleft <= 0) {
                                 clearInterval(downloadTimer);
-                                document.getElementById("countdown").innerHTML = "Hết giờ!";
+                                document.getElementById("countdown").innerHTML = "Hết hiệu lực!";
                                 document.getElementById("submit").style.display = "none";
                                 document.getElementById("new_submit").style.display = "block";
                             } else {

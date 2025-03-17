@@ -10,7 +10,7 @@
         <!-- Title -->
         <div class="row">
             <div class="col-lg-12">
-                <h3>Danh sách sản phẩm</h3>
+                <h3>Danh Mục</h3>
             </div>
         </div>
         <!-- /.row -->

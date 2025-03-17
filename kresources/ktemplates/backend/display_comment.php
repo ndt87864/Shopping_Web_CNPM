@@ -4,7 +4,7 @@
         <p class="bg-success"></p>
         <div class="col-md-12">
             <br />
-            <table class="table table-hover col-12" border="1px">
+            <table class="table table-reponsive">
                 <tbody>
                     <?php display_comment_product(); ?>
                 </tbody>

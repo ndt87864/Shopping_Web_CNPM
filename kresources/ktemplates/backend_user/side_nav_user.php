@@ -1,13 +1,10 @@
 <div class="collapse navbar-collapse navbar-ex1-collapse col-12">
     <ul class="nav side-nav">
-        <li>
-            <a href="index_user.php"><i class="now-ui-icons design_app"></i> Công cụ</a>
-        </li>
         <li class="">
             <a href="index_user.php?order"><i class="fa fa-fw fa-table"></i> Đơn hàng</a>
         </li>
         <li>
-            <a href="index_user.php?user"><i class="fa fa-fw fa-user"></i>Tài khoản</a>
+            <a href="index_user.php"><i class="fa fa-fw fa-user"></i>Tài khoản</a>
         </li>
         <li>
             <a href="index_user.php?address"><i class="fa fa-fw fa-truck"></i>Thông tin nhận hàng</a>
@@ -21,14 +18,14 @@
         -->
         <div class="sidebar-wrapper" id="sidebar-wrapper">
             <ul class="nav">
-                <li>
-                    <a href="index_user.php"><i class="now-ui-icons design_app"></i> Công cụ</a>
-                </li>
                 <li class="">
                     <a href="index_user.php?order"><i class="fa fa-fw fa-table"></i> Đơn hàng</a>
                 </li>
+                <li class="">
+                    <a href="index_user.php?cus_support"><i class="fa fa-fw fa-users-cog"></i> Yêu cầu hỗ trợ </a>
+                </li>
                 <li>
-                    <a href="index_user.php?user"><i class="fa fa-fw fa-user"></i>Tài khoản</a>
+                    <a href="index_user.php"><i class="fa fa-fw fa-user"></i>Tài khoản</a>
                 </li>
                 <li>
                     <a href="index_user.php?address"><i class="fa fa-fw fa-truck"></i>Thông tin nhận hàng</a>

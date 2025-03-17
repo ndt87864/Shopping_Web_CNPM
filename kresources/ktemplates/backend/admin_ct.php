@@ -3,7 +3,6 @@ function total_buy()
 {
     $query = query("SELECT COUNT(id) as total FROM buy WHERE status='Đang xử lý'");
     confirm($query);
-    // Xuất dữ liệu của mỗi hàng
     while ($row = fetch_array($query)) {
         $total = $row["total"];
         return $total;
